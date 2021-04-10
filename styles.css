@@ -9,6 +9,7 @@
 
 div.nav-bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem 6rem;
   width: 100vw;
@@ -18,6 +19,14 @@ div.nav-bar {
 div.logo {
   font-size: 1.5rem;
   color: #bcc3c7;
+}
+
+.hamburger,
+.close {
+  color: #bcc3c7;
+  font-size: 20px;
+  display: none;
+  cursor: pointer;
 }
 
 ul.nav-links {
@@ -349,16 +358,35 @@ div.footer h6 {
 /* Media Query */
 @media (max-width: 768px) {
   div.nav-bar {
-    flex-direction: column;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 3rem;
   }
-  div.logo {
-    margin-bottom: 1rem;
+
+  .hamburger {
+    display: block;
   }
+
+  .nav-links .close {
+    display: block;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .hide {
+    display: none;
+  }
+
   ul.nav-links {
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 1rem;
+    display: none;
   }
   ul li {
     margin-bottom: 0.7rem;
@@ -374,12 +402,13 @@ div.footer h6 {
   div.hero-background {
     padding: 4rem;
     justify-content: center;
+    align-items: center;
   }
   div.background {
     height: 320px;
   }
   div.background h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-left: 1rem;
   }
   div.background p {
