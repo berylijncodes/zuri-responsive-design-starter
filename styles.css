@@ -9,7 +9,7 @@
 
 div.nav-bar {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   padding: 1rem 6rem;
   width: 100vw;
@@ -387,8 +387,6 @@ div.footer h6 {
     justify-content: space-between;
     margin-top: 1rem;
     display: none;
-    position: relative;
-    z-index: 10;
   }
   ul li {
     margin-bottom: 0.7rem;
