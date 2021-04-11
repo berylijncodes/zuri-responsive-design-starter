@@ -369,7 +369,7 @@ div.footer h6 {
     display: block;
   }
 
-  .nav-links .close {
+  ul.nav-links.close {
     display: block;
   }
 
@@ -387,6 +387,8 @@ div.footer h6 {
     justify-content: space-between;
     margin-top: 1rem;
     display: none;
+    position: relative;
+    z-index: 10;
   }
   ul li {
     margin-bottom: 0.7rem;

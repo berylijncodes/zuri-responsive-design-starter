@@ -1,6 +1,6 @@
 const hamburger = document.getElementById('hamburger');
 const close = document.getElementById('close');
-const navUL = document.getElementById('nav-links');
+const navUL = document.getElementById('navLinks');
 
 hamburger.addEventListener('click', () => {
     navUL.classList.toggle('show');
@@ -8,7 +8,7 @@ hamburger.addEventListener('click', () => {
 });
 
 close.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+    navUL.classList.toggle('show');
     hamburger.classList.toggle('hide');
 });
     
