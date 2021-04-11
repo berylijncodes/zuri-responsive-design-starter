@@ -35,6 +35,7 @@ ul.nav-links {
   padding: 0;
 }
 
+
 ul li {
   margin: 0 2vw;
   list-style: none;
@@ -369,17 +370,26 @@ div.footer h6 {
     display: block;
   }
 
-  ul.nav-links.close {
+  /*ul.nav-links.close {
+    display: block;
+  }*/
+
+  /*this toggles the menu*/
+  /*.hamburger.show{ display: block };*/
+
+  ul.nav-links.show{
     display: block;
   }
 
-  .show {
-    display: flex;
+  .close.show{
+    display: block;
   }
 
-  .hide {
+  .hamburger.hide,
+  .close.hide{
     display: none;
   }
+
 
   ul.nav-links {
     flex-direction: column;
@@ -388,6 +398,8 @@ div.footer h6 {
     margin-top: 1rem;
     display: none;
   }
+
+  
   ul li {
     margin-bottom: 0.7rem;
     border-bottom: 1px solid #e44c65;
